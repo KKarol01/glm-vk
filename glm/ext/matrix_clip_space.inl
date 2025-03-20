@@ -361,7 +361,7 @@ namespace glm
 
 		mat<4, 4, T, defaultp> Result(static_cast<T>(0));
 		Result[0][0] = w;
-		Result[1][1] = h;
+		Result[1][1] = -h;
 		Result[2][2] = zFar / (zNear - zFar);
 		Result[2][3] = - static_cast<T>(1);
 		Result[3][2] = -(zFar * zNear) / (zFar - zNear);
